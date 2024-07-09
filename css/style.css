@@ -1,3 +1,6 @@
 .container {
   margin: 0px 366px;
 }
+body, html{
+  scroll-behavior: smooth;
+}
