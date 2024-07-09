@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 .container {
-  margin: 0px 366px;
+  margin: 14px 366px;
 }
 body, html{
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+tittleofpizza{
+  font-family: "Roboto", sans-serif; ;
+  font-size: 39.81px;
+}
+
+.name {
+  margin: 16px 492px;
+
 }
