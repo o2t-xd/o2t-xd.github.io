@@ -1,54 +1,45 @@
 <!DOCTYPE html>
-<html lang='ru'>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cart - Pizza Tsunami</title>
-    <link rel="icon" type="image/x-icon" href="images/pizza tsunami log.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация через Telegram</title>
+    <!-- Скрипт для виджета Telegram -->
+    <script async src="https://telegram.org/js/telegram-widget.js?22"
+            data-telegram-login="PizzaTsunamiBot"
+            data-size="large"
+            data-onauth="onTelegramAuth(user)"
+            data-request-access="write">
+    </script>
 </head>
 <body>
-    <div class="container">
-      <h1>Корзина</h1>
-      <p>Для оформления заказа, авторизуйтесь через Telegram:</p>
-        
-    </div>
+    <h1>Авторизация через Telegram</h1>
+    <!-- Место для вывода сообщений или состояния авторизации -->
+    <div id="status"></div>
 
-<script async src="https://telegram.org/js/telegram-widget.js?22"
-  data-telegram-login="PizzaTsunamiBot"
-  data-size="large"
-  data-onauth="onTelegramAuth(user)"
-  data-request-access="write">
-</script>
-<script type="text/javascript">
-function onTelegramAuth(user) {
-// Отправка POST-запроса на ваш сервер для обработки успешной авторизации
-var xhr = new XMLHttpRequest();
-var url = 'https://pokeshmoke.pythonanywhere.com/auth'; // URL вашего Flask сервера
-var params = JSON.stringify({ id: user.id }); // Параметры запроса, можно добавить username и другие данные
+    <!-- JavaScript код для обработки успешной авторизации -->
+    <script type="text/javascript">
+        function onTelegramAuth(user) {
+            // Вызов функции на сервере Flask для отправки сообщения
+            var xhr = new XMLHttpRequest();
+            var url = 'https://pokeshmoke.pythonanywhere.com/auth'; // URL вашего Flask сервера
+            var params = JSON.stringify({ id: user.id });
 
-xhr.open('POST', url, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.open('POST', url, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
 
-xhr.onreadystatechange = function() {
-  if (xhr.readyState === XMLHttpRequest.DONE) {
-    if (xhr.status === 200) {
-      alert('Успешная регистрация! Сообщение отправлено пользователю.');
-    } else {
-      alert('Ошибка при отправке запроса.');
-    }
-  }
-};
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById('status').innerHTML = 'Успешная регистрация на сайте! Сообщение отправлено в Telegram.';
+                    } else {
+                        document.getElementById('status').innerHTML = 'Ошибка при отправке запроса на сервер.';
+                    }
+                }
+            };
 
-xhr.send(params);
-}
-</script>
-
-
-
-
-
-
-
+            xhr.send(params);
+        }
+    </script>
 </body>
 </html>
