@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+    <meta charset="UTF-8">
+    <title>Cart - Pizza Tsunami</title>
+    <link rel="icon" type="image/x-icon" href="images/pizza tsunami log.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Корзина</h1>
+        <p>Для оформления заказа, авторизуйтесь через Telegram:</p>
+        <div id="telegram-login-button">
+            <a href="#" onclick="telegramLogin()">
+                <img src="images/icons/telegram icon.png" alt="Telegram" style="width: 200px; height: auto;">
+            </a>
+        </div>
+    </div>
+
+    <script async src="https://telegram.org/js/telegram-widget.js?7"></script>
+
+    <script>
+        function telegramLogin() {
+            TelegramLoginWidget.showLogin({
+                bot: "PizzaTsunamiBot",
+                dataSize: "large",
+                radius: 10,
+                authUrl: "https://ваш-домен/auth.php",
+                requestAccess: "write"
+            });
+        }
+    </script>
+</body>
+</html>
