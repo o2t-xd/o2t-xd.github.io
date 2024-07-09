@@ -133,3 +133,20 @@ body, html {
   align-items: center;
   color: #FFFF; /* Text color, adjust as needed */
 }
+
+
+.menu
+{
+  max-width: 1920px; /* Added 'px' unit */
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+
+.pizzas
+{
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
