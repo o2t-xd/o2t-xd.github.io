@@ -68,9 +68,12 @@ body, html{
 }
 
 
-.start-page{
-
+.pizza-photo{
+  padding-top: 207px;
+  padding-right: 304px;
   background-color: #F8F8F8;
+  display: flex;
+  align-items: center;
 }
 
 
