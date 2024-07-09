@@ -9,18 +9,45 @@
 </head>
 <body>
     <div class="container">
-        <h1>Корзина</h1>
-        <p>Для оформления заказа, авторизуйтесь через Telegram:</p>
+      <h1>Корзина</h1>
+      <p>Для оформления заказа, авторизуйтесь через Telegram:</p>
         
-        </div>
+    </div>
+
+<script async src="https://telegram.org/js/telegram-widget.js?22"
+  data-telegram-login="PizzaTsunamiBot"
+  data-size="large"
+  data-onauth="onTelegramAuth(user)"
+  data-request-access="write">
+</script>
+<script type="text/javascript">
+function onTelegramAuth(user) {
+// Отправка POST-запроса на ваш сервер для обработки успешной авторизации
+var xhr = new XMLHttpRequest();
+var url = 'https://pokeshmoke.pythonanywhere.com/auth'; // URL вашего Flask сервера
+var params = JSON.stringify({ id: user.id }); // Параметры запроса, можно добавить username и другие данные
+
+xhr.open('POST', url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    if (xhr.status === 200) {
+      alert('Успешная регистрация! Сообщение отправлено пользователю.');
+    } else {
+      alert('Ошибка при отправке запроса.');
+    }
+  }
+};
+
+xhr.send(params);
+}
+</script>
 
 
-    <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-login="PizzaTsunamiBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
-    <script type="text/javascript">
-      function onTelegramAuth(user) {
-        alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
-      }
-    </script>
+
+
+
 
 
 </body>
