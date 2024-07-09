@@ -1,13 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-
 
 .container {
-  margin: 14px 366px;
+  max-width: 1920;
+  margin: 0px auto;
 }
+
+.header{
+  margin-top: 14px;
+}
+
+
+.header-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right-side{
+  font-family: "Outfit", sans-serif; ;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.header-logo{
+  font-family: "Outfit", sans-serif; ;
+  font-size: 39.81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-name
+{
+  margin-left: 49px;
+}
+.avatar{
+  margin-right: 141px;
+}
+.geo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.city-ch{
+  margin-right: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
 body, html{
   scroll-behavior: smooth;
-  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding: 0;
 }
 
 
@@ -15,12 +65,6 @@ body, html{
   box-sizing: border-box;
 }
 
-tittleofpizza{
-  font-family: "Roboto", sans-serif; ;
-  font-size: 39.81px;
-}
 
-.name {
-  margin: 16px 492px;
 
-}
+
