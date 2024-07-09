@@ -14,12 +14,18 @@
 </head>
 <body>
     <h1>Авторизация через Telegram</h1>
-    <!-- Место для вывода сообщений или состояния авторизации -->
-    <div id="status"></div>
+    
+    <!-- Кнопка для авторизации через Telegram -->
+    <script async src="https://telegram.org/js/telegram-widget.js?22"
+            data-telegram-login="PizzaTsunamiBot"
+            data-size="large"
+            data-onauth="onTelegramAuth(user)"
+            data-request-access="write">
+    </script>
 
-    <!-- JavaScript код для обработки успешной авторизации -->
     <script type="text/javascript">
         function onTelegramAuth(user) {
+            console.log(user);
             // Вызов функции на сервере Flask для отправки сообщения
             var xhr = new XMLHttpRequest();
             var url = 'https://pokeshmoke.pythonanywhere.com/auth'; // URL вашего Flask сервера
