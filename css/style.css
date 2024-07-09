@@ -1,13 +1,23 @@
+body, html{
+  scroll-behavior: smooth;
+  margin:0;
+
+
+
+*{
+  box-sizing: border-box;
+}
 
 .container {
   max-width: 1920;
   margin: 0px auto;
 }
 
-.header{
-  margin-top: 14px;
-}
 
+.header{
+  padding: 14px 0px;
+  background-color 
+}
 
 .header-line{
   display: flex;
@@ -36,35 +46,35 @@
   margin-left: 49px;
 }
 .avatar{
-  margin-right: 141px;
+  margin-right: 52px;
 }
 .geo{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 10px;
 
 }
+
+.cart{
+  margin-right: 52px;
+
+
 .city-ch{
   margin-bottom: 10px;
-  margin-right: 21px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-between;
+}
 
 
+.start-page{
+
+  background-color: #F8F8F8;
 }
 
 
 
-body, html{
-  scroll-behavior: smooth;
-  margin:0;
-  padding: 0;
-}
-
-
-*{
-  box-sizing: border-box;
-}
 
 
 
