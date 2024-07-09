@@ -65,16 +65,34 @@ body, html {
   justify-content: space-between;
 }
 
+
+/*START PAGE*/
+
 .start-page {
   max-width: 1920px; /* Added 'px' unit */
-  margin: 0 auto;
+  margin: 0px auto;
   background-color: #F8F8F8;
 }
 
 .start-container {
-  padding-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   background-color: #F8F8F8;
 }
+
+
+.logo-start {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 100px; /* или укажите конкретные размеры */
+  height: auto; /* или укажите конкретные размеры */
+  z-index: 1;
+}
+
+
+
 
 .pizza-photo {
   display: flex;
@@ -82,4 +100,36 @@ body, html {
   height: 735px; /* Added 'px' unit */
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.start-text-first
+{
+  z-index: 100;
+  position: absolute;
+  top: 72%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for actual center */
+  font-family: "Outfit", sans-serif;
+  font-size: 70px;
+  display: flex;
+  justify-content: center; /* Center text content */
+  align-items: center;
+  color: #FFFF; /* Text color, adjust as needed */
+}
+
+.start-text-second
+{
+  z-index: 100;
+  position: absolute;
+  top: 78%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust for actual center */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  display: flex;
+  justify-content: center; /* Center text content */
+  align-items: center;
+  color: #FFFF; /* Text color, adjust as needed */
 }
