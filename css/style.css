@@ -45,10 +45,11 @@
 
 }
 .city-ch{
+  margin-bottom: 10px;
   margin-right: 21px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
 
 }
 
