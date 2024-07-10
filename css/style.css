@@ -13,7 +13,7 @@ body, html {
 }
 
 .header {
-  padding: 14px 0;
+  padding-top: 14px;
   background-color: #fff; /* Specify background color */
 }
 
