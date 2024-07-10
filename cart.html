@@ -44,14 +44,33 @@
                         <a class="city-ch">
                             <img src="images/icons/geo icon.png" alt="">
                         </a>
-                        <a class="choose">Укажите ваш город</a>
+                        <div class="dropdown">
+							<button onclick="toggleDropdown()" class="dropbtn" id="cityButton">Указать город</button>
+							<div id="dropdownMenu" class="dropdown-content">
+								<a href="#" onclick="selectCity('Калининград')">Калининград</a>
+								<a href="#" onclick="selectCity('Зеленоградск')">Зеленоградск</a>
+								<a href="#" onclick="selectCity('Светлогорск')">Светлогорск</a>
+							</div>
+						</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>	
     
+    <script>
+        function selectCity(city) {
+            document.getElementById("cityButton").innerText = city;
+            localStorage.setItem('selectedCity', city);
+        }
 
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const selectedCity = localStorage.getItem('selectedCity');
+            if (selectedCity) {
+                document.getElementById("cityButton").innerText = selectedCity;
+            }
+        });
+    </script>
 
 
 
