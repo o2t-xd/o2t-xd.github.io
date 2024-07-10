@@ -33,7 +33,7 @@ body, html {
 
 .header-logo {
   font-family: "Outfit", sans-serif;
-  font-size: 39.81px;
+  font-size: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,11 +41,11 @@ body, html {
 
 .header-name {
   margin-left: 49px;
+  font-weight: 500;
 }
 
 .telegram {
   margin-right: 52px;
-
 }
 
 .geo {
