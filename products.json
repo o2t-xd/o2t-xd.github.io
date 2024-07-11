@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name":" Пепперони",
+        "price": 200,
+        "image": "image/pizzas/pepperoni pic.png"
+    },
+    {
+        "id": 2,
+        "name":" Цунами",
+        "price": 250,
+        "image": "image/pizzas/tsunami pic.png"
+    },
+    {
+        "id": 3,
+        "name":" Ветчина и грибы",
+        "price": 290,
+        "image": "image/pizzas/vetchina i gribi pic.png"
+    },
+    {
+        "id": 4,
+        "name":" Сырная",
+        "price": 200,
+        "image": "image/pizzas/cheesy pic.png"
+    },
+    {
+        "id": 5,
+        "name":" Мясная",
+        "price": 300,
+        "image": "image/pizzas/myasnaya pic.png"
+    },
+    {
+        "id": 6,
+        "name":" Гавайская",
+        "price": 200,
+        "image": "image/pizzas/havana pic.png"
+    },
+    {
+        "id": 7,
+        "name":" Бургер",
+        "price": 200,
+        "image": "image/pizzas/burger pic.png"
+    },
+    {
+        "id": 8,
+        "name":" Ветчина и сыр",
+        "price": 200,
+        "image": "image/pizzas/vetchina default pic.png"
+    },
+    {
+        "id": 9,
+        "name":" Овощи и грибы",
+        "price": 200,
+        "image": "image/pizzas/ovoshi i gribi pic.png"
+    }
+
+]
