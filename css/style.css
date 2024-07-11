@@ -186,6 +186,10 @@ background: #FFFFFF;
 border: 1px solid rgba(0, 0, 0, 0.1);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;
+
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
 } 
 .pepperoni-pic
 {
@@ -247,6 +251,8 @@ top: 403px;
 background: #FFFFFF;
 border: 3px solid #61CEF1;
 border-radius: 40px;
+
+display: inline-block;
 }
 
 .button
@@ -257,8 +263,8 @@ box-sizing: border-box;
 position: absolute;
 width: 181px;
 height: 55px;
-left: 155px;
-top: 403px;
+left: 126px;
+bottom:-3px;
 
 background: #61CEF1;
 border: 1px solid #61CEF1;
@@ -269,11 +275,42 @@ text-align: center;
 color:white;
 text-decoration: none;
 line-height: 50px;
+transition: transform 0.5s ease, background-color 0.3s ease;
+z-index:1;
+}
+
+.button1{
+  
+box-sizing: border-box;
+
+position: absolute;
+width: 181px;
+height: 55px;
+left: 126px;
+bottom:-3px;
+
+background: #ffffff;
+border: 1px solid #61CEF1;
+border-radius: 40px;
+padding-left:30px;
+font-size:22px;
+text-align: center;
+color:rgba(0, 0, 0, 0.75);
+text-decoration: none;
+line-height: 50px;
+font-weight: 500;
+}
+
+
+.buy-button:hover .button{
+  transform: translateX(-131px);
+  background-color: #4A90E2;
+
 }
 
 .price
 {
-  /* 600 ₽ */
+/* 600 ₽ */
 
 position: absolute;
 width: 91px;
