@@ -11,14 +11,15 @@ body, html {
 .container {
   max-width: 1920px; /* Added 'px' unit */
   margin: 0 auto;
-  -webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
-  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
-  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+
 }
 
 .header {
   padding-top: 14px;
   background-color: #fff;
+  -webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
 }
 
 .header2 {
@@ -81,6 +82,7 @@ body, html {
 .start-page {
   width: 1920px;
   margin: 105px auto;
+  background-color: #f8f8f8;
 }
 
 .start-container {
