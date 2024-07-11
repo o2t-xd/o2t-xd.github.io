@@ -67,45 +67,59 @@
 
 
 
-<div class="start-page">
-	<div class="start-container">
-			<div class="pizza-photo">
-				<img src="images/pizza tsunami main page blur photo.png">
+	<div class="start-page">
+		<div class="start-container">
+				<div class="pizza-photo">
+					<img src="images/pizza tsunami main page blur photo.png">
+				</div>
+				<div class="logo-start">
+					<img src="images/pizza tsunami log.png">
+				</div>
+				<div class="start-text-first">
+					<a>PIZZA TSUNAMI</a>
+				</div>
+				<div class="start-text-second">
+					<a>Вкус, который накроет вас с головой</a>
+				<div>
 			</div>
-			<div class="logo-start">
-				<img src="images/pizza tsunami log.png">
-			</div>
-			<div class="start-text-first">
-				<a>PIZZA TSUNAMI</a>
-			</div>
-			<div class="start-text-second">
-				<a>Вкус, который накроет вас с головой</a>
-			<div>
 		</div>
 	</div>
-</div>
 
 
 
-<div class="menu">
-	<a class="pizzas">Пиццы</a>
-</div>
+	<div class="menu">
+		<a class="pizzas">Пиццы</a>
+		<div class="pepperoni">	
+			<img src="images/pizzas/pepperoni pic.png" alt="Pepperoni Pizza" class="pepperoni-pic">
+			<a class="pepperoni-text">Пепперони</a>
+			<a class="pepperoni-info">Пикантная пепперони , увеличенная порция моцареллы, фирменный томатный соус</a>
+			<div class="buy-button"></div>
+			<a class="button" href="#">Купить</a>
+			<a class="price">600 ₽</a>
+			
+		</div>
+
+
+		<div class="tsunami"></div>	
+		<div class="vetchina-gribi"></div>
+		
+	</div>
 
 
 
-<script>
-	function selectCity(city) {
-		document.getElementById("cityButton").innerText = city;
-		localStorage.setItem('selectedCity', city);
-	}
-
-	document.addEventListener('DOMContentLoaded', (event) => {
-		const selectedCity = localStorage.getItem('selectedCity');
-		if (selectedCity) {
-			document.getElementById("cityButton").innerText = selectedCity;
+	<script>
+		function selectCity(city) {
+			document.getElementById("cityButton").innerText = city;
+			localStorage.setItem('selectedCity', city);
 		}
-	});
-</script>
+
+		document.addEventListener('DOMContentLoaded', (event) => {
+			const selectedCity = localStorage.getItem('selectedCity');
+			if (selectedCity) {
+				document.getElementById("cityButton").innerText = selectedCity;
+			}
+		});
+	</script>
 
 
 </body>
