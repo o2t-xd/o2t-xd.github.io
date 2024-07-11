@@ -43,9 +43,11 @@
                     <a class="telegram" href="">
                         <img src="images/icons/telegram icon.png" width="38" height="38"  alt="">
                     </a>
-                    <a class="cart" href="cart.html">
+                    <div class="cart-icon">
                         <img src="images/icons/cart icon.png" alt="">
-                    </a>
+						<div class="totalQuantity">0</div>
+					</div>
+                    
                     <div class="geo">
                         <a class="city-ch">
                             <img src="images/icons/geo icon.png" alt="">
@@ -64,6 +66,38 @@
         </div>
     </div>	
     
+	<div class="cart">
+		<h2>Cart</h2>
+		<div class="listCart">
+			<div class="item">
+				<img src="images/pizzas/pepperoni pic.png">
+				<div class="content">
+					<div class="name">
+						Product name
+					</div>
+					<div class="item-price">
+						350Р
+					</div>
+				</div>
+				<div class="quantity">
+					<button>-</button>
+					<span class="value">3</span>
+					<button>+</button>
+				</div>
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="closed">Закрыть</div>
+			<a class="checkout" href="checkout.html">Оплата</a>
+
+		</div>
+
+		
+	</div>
+
+
+
+
 
 
 
@@ -84,11 +118,11 @@
 		</div>
 	</div>
 	</div>
-</div>
+	</div>
 
 
 
-<div class="menu">
+	<div class="menu">
 	<a class="pizzas">Пиццы</a>
 	<div class="pepperoni">	
 		<img src="images/pizzas/pepperoni pic.png"class="mini-pizza">
@@ -110,7 +144,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">450 ₽</a>
 
 
 	</div>	
@@ -122,7 +156,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">500 ₽</a>
 	</div>
 
 	<div class="cheese">
@@ -133,7 +167,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">350 ₽</a>
 	</div>
 
 	<dig class="meat">
@@ -144,7 +178,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">700 ₽</a>
 	</dig>
 
 	<div class="havai">
@@ -155,7 +189,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">300 ₽</a>
 	</div>
 
 	<div class="burger">
@@ -166,7 +200,7 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">400 ₽</a>
 	</div>
 
 	<div class="vetchina-sir">
@@ -190,11 +224,11 @@
 			<a class="button1" href="">В корзину</a>
 			<a class="button" href="">Купить</a>
 		</div>
-		<a class="price">600 ₽</a>
+		<a class="price">500 ₽</a>
 
 
+		</div>
 	</div>
-</div>
 
 
 
@@ -212,6 +246,7 @@
 		});
 	</script>
 
+	<script src="app.js"></script>
 
 </body>
 </html>
