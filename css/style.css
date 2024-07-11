@@ -191,7 +191,7 @@ border-radius: 40px;
   -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
   box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
 } 
-.pepperoni-pic
+.mini-pizza
 {
   width: 262px;
   height: 244px;
@@ -199,7 +199,7 @@ border-radius: 40px;
   margin-top:30px;
 }
 
-.pepperoni-text
+.pizza-name
 {
 position: absolute;
 width: 208px;
@@ -210,15 +210,14 @@ top: 291px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 26px;
 line-height: 35px;
-/* identical to box height */
 
 color: rgba(0, 0, 0, 0.7);
 
 }
 
-.pepperoni-info
+.pizza-info
 {
   /* Пикантная пепперони , увеличенная порция моцареллы, фирменный томатный соус */
 
@@ -233,7 +232,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
-
 
 
 }
@@ -275,8 +273,9 @@ text-align: center;
 color:white;
 text-decoration: none;
 line-height: 50px;
-transition: transform 0.5s ease, background-color 0.3s ease;
+transition: all 0.5s;
 z-index:1;
+transform-origin: left;
 }
 
 .button1{
@@ -289,11 +288,10 @@ height: 55px;
 left: 126px;
 bottom:-3px;
 
-background: #ffffff;
 border: 1px solid #61CEF1;
 border-radius: 40px;
-padding-left:30px;
-font-size:22px;
+padding-left:22px;
+font-size:25px;
 text-align: center;
 color:rgba(0, 0, 0, 0.75);
 text-decoration: none;
@@ -303,7 +301,8 @@ font-weight: 500;
 
 
 .buy-button:hover .button{
-  transform: translateX(-131px);
+  
+  transform: translateX(-131px) scaleX(0.9);
   background-color: #4A90E2;
 
 }
@@ -346,13 +345,14 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;
 
-
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
 
 }
 
 .vetchina-gribi
 {
-/* Ветчина и сыр */
 
 box-sizing: border-box;
 
@@ -367,11 +367,131 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 40px;
 
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+
+}
+.cheese{
+
+box-sizing: border-box;
+
+position: absolute;
+width: 360px;
+height: 478px;
+left: 343px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
 
 
 }
+.meat{
+/* Мясная */
 
+box-sizing: border-box;
 
+position: absolute;
+width: 360px;
+height: 478px;
+left: 792px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+
+}
+.havai{
+/* Гавайская */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 360px;
+height: 478px;
+left: 1241px;
+top: 686px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+
+}
+.burger{
+  /* Бургер */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 360px;
+height: 478px;
+left: 343px;
+top: 1209px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+}
+.vetchina-sir
+{
+  /* Ветчина и сыр */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 360px;
+height: 478px;
+left: 792px;
+top: 1209px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+}
+.ovoshi{
+  /* Песто */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 360px;
+height: 478px;
+left: 1241px;
+top: 1209px;
+
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px;
+-webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+}
 .dropdown {
   position: relative;
   display: inline-block;
