@@ -581,7 +581,7 @@ transform:translate(25px,-45px);
 }
 
 .cart{
-  color:white;
+  color:black;
   position:fixed;
   top:0;
   width:400px;
@@ -630,7 +630,11 @@ transform:translate(25px,-45px);
 
 .cart .listCart{
   padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   overflow: auto;
+  background-color: #fff;
+  border-radius: 50px ;
 }
 
 .cart .listCart::-webkit-scrollbar{
@@ -651,8 +655,11 @@ transform:translate(25px,-45px);
   justify-content: center;
   align-items: center;
   cursor:pointer;
+  color: #fff;
   border-radius: 30px;
+
 }
+
 
 .cart .buttons .checkout{
   background-color: #ffffff;
