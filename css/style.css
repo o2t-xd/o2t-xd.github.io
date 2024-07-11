@@ -651,7 +651,7 @@ transform:translate(25px,-45px);
   justify-content: center;
   align-items: center;
   cursor:pointer;
-  border-radius: 30%;
+  border-radius: 30px;
 }
 
 .cart .buttons .checkout{
@@ -660,5 +660,5 @@ transform:translate(25px,-45px);
   justify-content: center;
   align-items: center;
   color:#61CEF1;
-  border-radius: 30%;
+  border-radius: 30px;
 }
