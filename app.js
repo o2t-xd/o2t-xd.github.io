@@ -21,29 +21,29 @@ close.addEventListener("click",()=>{
     })
 
 
-const addDataToHTML = () => {
-    listProductHTML.innerHTML='';
-    if(listProducts.length>0){
-        listProducts.forEach(product=>{
-            let newProduct = document.createElement('div');
-            newProduct.classList.add('item');
-            newProduct.innerHTML=`
-            <div class="pepperoni" data-id="1">	
-                <img src="images/pizzas/pepperoni pic.png"class="mini-pizza">
-                <a class="pizza-name">Пепперони</a>
-                <a class="pizza-info">Пикантная пепперони , увеличенная порция моцареллы, фирменный томатный соус</a>
-                <div class="buy-button">
-                    <button class="button1" href="">В корзину</button>
-                    <button class="button" href="">Купить</button>
-                </div>
-                <a class="price">600 ₽</a>
+// const addDataToHTML = () => {
+//     listProductHTML.innerHTML='';
+//     if(listProducts.length>0){
+//         listProducts.forEach(product=>{
+//             let newProduct = document.createElement('div');
+//             newProduct.classList.add('item');
+//             newProduct.innerHTML=`
+//             <div class="pepperoni" data-id="1">	
+//                 <img src="images/pizzas/pepperoni pic.png"class="mini-pizza">
+//                 <a class="pizza-name">Пепперони</a>
+//                 <a class="pizza-info">Пикантная пепперони , увеличенная порция моцареллы, фирменный томатный соус</a>
+//                 <div class="buy-button">
+//                     <button class="button1" href="">В корзину</button>
+//                     <button class="button" href="">Купить</button>
+//                 </div>
+//                 <a class="price">600 ₽</a>
                 
-            </div>
-            `
-            listProductHTML.appendChild(newProduct);
-        })
-    }
-}
+//             </div>
+//             `
+//             listProductHTML.appendChild(newProduct);
+//         })
+//     }
+// }
 
 
 
