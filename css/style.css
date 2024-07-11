@@ -19,7 +19,11 @@ body, html {
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
   -moz-box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
-  box-shadow: 0px 5px 100px 0px rgba(31, 86, 128, 0.32);
+  box-shadow:
+    background-color: #f8f8f;
+   
+
+
 }
 
 .header2 {
@@ -80,9 +84,12 @@ body, html {
 
 
 .start-page {
-  width: 1920px;
-  margin: 105px auto;
+  width: auto;
+  margin: 100px auto;
   background-color: #f8f8f8;
+
+
+
 }
 
 .start-container {
@@ -90,18 +97,23 @@ body, html {
   background-color: #f8f8f8;
   position:relative;
   margin-top: 30px ;
+
 }
 
 
 .logo-start {
+  margin: 0px auto;
   position: absolute;
   top: 40%;
-  left: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100px; /* или укажите конкретные размеры */
   height: auto; /* или укажите конкретные размеры */
   z-index: 1;
-  display: flex;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
 }
 
 
@@ -150,11 +162,14 @@ body, html {
 
 
 .menu {
+
   max-width: 1920px;
   margin: 0 auto;
   background-color: #FFFFFF;
   position: relative;
   padding: 20px;
+
+  
 }
 
 .pizzas
