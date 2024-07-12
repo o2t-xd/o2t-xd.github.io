@@ -733,7 +733,11 @@ transform:translate(25px,-45px);
 
 /*CHECKOUT*/
 
+.right-container {
+  max-width: 1920px; /* Added 'px' unit */
+  padd-left: 200px;
 
+}
 
 
 .checkoutLayout{
@@ -741,6 +745,7 @@ transform:translate(25px,-45px);
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
   padding: 20px;
+  
 }
 .checkoutLayout .right{
   background-color: #61CEF1;
