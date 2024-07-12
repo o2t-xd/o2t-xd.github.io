@@ -2,56 +2,65 @@
     {
         "id": 1,
         "name":" Пепперони",
-        "price": 350,
-        "image": "image/pizzas/pepperoni pic.png"
+        "price": 600,
+        "info": "Пикантная пепперони , увеличенная порция моцареллы, фирменный томатный соус",
+        "image": "pepperoni pic.png"
     },
     {
         "id": 2,
         "name":" Цунами",
-        "price": 350,
-        "image": "image/pizzas/tsunami pic.png"
+        "price": 450,
+        "info": "Цыпленок, бекон, соус барбекю, красный лук, моцарелла, фирменный томатный соус",
+        "image": "tsunami pic.png"
     },
     {
         "id": 3,
         "name":" Ветчина и грибы",
-        "price": 300,
-        "image": "image/pizzas/vetchina i gribi pic.png"
+        "price": 500,
+        "info": "Ветчина, шампиньоны, увеличенная порция моцареллы, фирменный томатный соус",
+        "image": "vetchina i gribi pic.png"
     },
     {
         "id": 4,
         "name":" Сырная",
-        "price": 500,
-        "image": "image/pizzas/cheesy pic.png"
+        "price": 350,
+        "info": "Моцарелла, сыры чеддер и пармезан, фирменный соус альфредо",
+        "image": "cheesy pic.png"
     },
     {
         "id": 5,
         "name":" Мясная",
-        "price": 600,
-        "image": "image/pizzas/myasnaya pic.png"
+        "price": 700,
+        "info": "Цыпленок, ветчина, пикантная пепперони, острые колбаски чоризо, моцарелла, фирменный томатный соус",
+        "image": "myasnaya pic.png"
     },
     {
         "id": 6,
         "name":" Гавайская",
-        "price": 350,
-        "image": "image/pizzas/havana pic.png"
+        "price": 300,
+        "info": "Двойная порция цыпленка, ананасы, моцарелла, фирменный соус альфредо",
+        "image": "havana pic.png"
     },
     {
         "id": 7,
         "name":" Бургер",
-        "price": 700,
-        "image": "image/pizzas/burger pic.png"
+        "price": 400,
+        "info": "Ветчина, маринованные огурчики, томаты, красный лук, соус бургер, моцарелла, фирменный томатный соус",
+        "image": "burger pic.png"
     },
     {
         "id": 8,
         "name":" Ветчина и сыр",
-        "price": 300,
-        "image": "image/pizzas/vetchina default pic.png"
+        "price": 600,
+        "info": "Ветчина, моцарелла, фирменный соус альфредо",
+        "image": "vetchina default pic.png"
     },
     {
         "id": 9,
         "name":" Овощи и грибы",
-        "price": 400,
-        "image": "image/pizzas/ovoshi i gribi pic.png"
+        "price": 500,
+        "info": "Шампиньоны, томаты, сладкий перец, кубики брынзы, фирменный томатный соус, итальянские травы",
+        "image": "ovoshi i gribi pic.png"
     }
 
 ]
