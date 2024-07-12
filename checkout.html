@@ -37,14 +37,13 @@
                     <a class="telegram" href="">
                         <img src="images/icons/telegram icon.png" width="38" height="38"  alt="">
                     </a>
-                    <a class="cart" href="">
-                        <img src="images/icons/cart icon.png" alt="">
-                    </a>
+
+                    
                     <div class="geo">
                         <a class="city-ch">
                             <img src="images/icons/geo icon.png" alt="">
                         </a>
-                        <div class="dropdown">
+						<div class="dropdown">
 							<button onclick="toggleDropdown()" class="dropbtn" id="cityButton">Указать город</button>
 							<div id="dropdownMenu" class="dropdown-content">
 								<a href="#" onclick="selectCity('Калининград')">Калининград</a>
@@ -57,6 +56,73 @@
             </div>
         </div>
     </div>	
+    
+
+
+    <div class="container">
+        <div class="checkoutLayout">
+    
+            
+            <div class="returnCart">
+                <h1>Ваш заказ</h1>
+                <div class="list">
+    
+                    <div class="item">
+                        <img src="images/1.webp">
+                        <div class="info">
+                            <div class="name">PRODUCT 1</div>
+                            <div class="price">$22/1 product</div>
+                        </div>
+                        <div class="quantity">5</div>
+                        <div class="returnPrice">$433.3</div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <div class="right-containter">
+                <div class="right">
+                    <h1>Ваши данные</h1>
+        
+                    <div class="form">
+                        <div class="group">
+                            <label for="name">ФИО</label>
+                            <input type="text" name="name" id="name">
+                        </div>
+            
+                        <div class="group">
+                            <label for="phone">Телефон</label>
+                            <input type="text" name="phone" id="phone">
+                        </div>
+            
+                        <div class="group">
+                            <label for="address">Адрес</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+            </div>
+
+                    <div class="return">
+                        
+                        <div class="row">
+                            <div>Итого</div>
+                            <div class="totalPrice">$900</div>
+                        </div>
+                    </div>
+                    <button class="buttonCheckout">Оплата</button>
+                    </div>
+        </div>
+    </div>
+    
+    
+    <script src="checkout.js"></script>
+
+
+
+
+
+
+
+
     
     <script>
         function selectCity(city) {

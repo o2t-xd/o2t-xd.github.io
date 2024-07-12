@@ -156,9 +156,34 @@ const increaseQuantity = (product_id) => {
     if (item) {
         item.quantity++;
     }
+ 
     addCartToHTML();
     addCartToMemory();
-};
+    
+}
+
+let products = null;
+// get data from file json
+fetch('product.json')
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        addDataToHTML();
+})
+
+let listCart = [];
+function checkCart(){
+    var cookieValue = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('listCart='));
+    if(cookieValue){
+        listCart = JSON.parse(cookieValue.split('=')[1]);
+    }else{
+        listCart = [];
+    }
+}
+checkCart();
+document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
 
 
     const initApp = () => {
@@ -177,4 +202,6 @@ const increaseQuantity = (product_id) => {
 
         })
     }
+    
     initApp();
+
