@@ -1,4 +1,4 @@
-let iconCart=document.querySelector(".cart-icon");
+const iconCart=document.querySelector(".cart-icon");
 let cart=document.querySelector('.cart');
 let container=document.querySelector(".container");
 let close=document.querySelector(".closed");
@@ -11,16 +11,36 @@ let body = document.querySelector('body');
 let listProducts = [];
 let carts= [];
 
-iconCart.addEventListener('click',()=>{
-    if(cart.style.right == "-100%"){
-        cart.style.right= '0%';
-    }else{
-        cart.style.right="-100%";
-    }
-})
-close.addEventListener("click",()=>{
-    cart.style.right="-100%";
-    })
+const botName = 'PizzaTsunamiBot';
+const authUrl = 'o2t-xd.github.io/auth';
+
+document.getElementById('telegram-login-link').addEventListener('click', function (event) {
+    event.preventDefault();
+    
+    const telegramLoginWidget = document.getElementById('telegram-login-widget');
+    
+    telegramLoginWidget.innerHTML = `
+        <script async src="https://telegram.org/js/telegram-widget.js?15" 
+                data-telegram-login="${botName}" 
+                data-size="large" 
+                data-radius="10" 
+                data-auth-url="${authUrl}" 
+                data-request-access="write">
+        </script>`;
+});
+
+
+
+
+function toggleCart() {
+    const cart = document.querySelector('.cart');
+    cart.classList.toggle('visible');
+}
+
+document.querySelector('.cart-icon').addEventListener('click', toggleCart);
+
+document.querySelector('.closed').addEventListener('click', toggleCart);
+
 
 
 const addDataToHTML = () => {
@@ -161,7 +181,7 @@ const increaseQuantity = (product_id) => {
 }
 
 let products = null;
-fetch('product.json')
+fetch('products.json')
     .then(response => response.json())
     .then(data => {
         products = data;

@@ -300,6 +300,7 @@ border-radius: 40px;
 display: inline-block;
 }
 
+
 .button
 {
 
@@ -347,7 +348,13 @@ text-decoration: none;
 line-height: 50px;
 font-weight: 500;
 }
+.button:hover{
+  cursor: pointer;
+}
 
+.button1:hover{
+  cursor: pointer;
+}
 
 .buy-button:hover .button{
   
@@ -610,15 +617,17 @@ transform:translate(25px,-45px);
   height:100vh;
   background-color: #61CEF1;
   display:grid;
-
-
   grid-template-rows:50px 1fr 50px;
   gap:20px;
-  transition:0.3s;
+  transition: right 0.4s;
   z-index:5;
   right:-100%;
-
 }
+
+.cart.visible {
+  right: 0;
+}
+
 
 .cart h2{
   color:white;
@@ -735,7 +744,7 @@ transform:translate(25px,-45px);
 
 .right-container {
   max-width: 1920px; /* Added 'px' unit */
-  padd-left: 200px;
+  padding-left: 6200px;
 
 }
 
