@@ -12,9 +12,7 @@ let listProducts = [];
 let carts= [];
 
 iconCart.addEventListener('click',()=>{
-    const cartright = window.getComputedStyle(cart).right;
     if(cart.style.right == "-100%"){
-        console.log('succes');
         cart.style.right= '0%';
     }else{
         cart.style.right="-100%";
@@ -163,7 +161,6 @@ const increaseQuantity = (product_id) => {
 }
 
 let products = null;
-// get data from file json
 fetch('product.json')
     .then(response => response.json())
     .then(data => {
@@ -183,18 +180,15 @@ function checkCart(){
     }
 }
 checkCart();
-document.cookie = "listCart=" + JSON.stringify(listCart) + "; expires=Thu, 31 Dec 2025 23:59:59 UTC; path=/;";
 
 
     const initApp = () => {
-        // get data product
         fetch('products.json')
         .then(response => response.json())
         .then(data => {
             listProducts = data;
             addDataToHTML()
             
-            // get cart from memory
             if(localStorage.getItem('cart')){ 
                 carts=JSON.parse(localStorage.getItem('cart'));
                 addCartToHTML();
