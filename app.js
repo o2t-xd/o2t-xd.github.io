@@ -11,24 +11,6 @@ let body = document.querySelector('body');
 let listProducts = [];
 let carts= [];
 
-const botName = 'PizzaTsunamiBot';
-const authUrl = 'o2t-xd.github.io/auth';
-
-document.getElementById('telegram-login-link').addEventListener('click', function (event) {
-    event.preventDefault();
-    
-    const telegramLoginWidget = document.getElementById('telegram-login-widget');
-    
-    telegramLoginWidget.innerHTML = `
-        <script async src="https://telegram.org/js/telegram-widget.js?15" 
-                data-telegram-login="${botName}" 
-                data-size="large" 
-                data-radius="10" 
-                data-auth-url="${authUrl}" 
-                data-request-access="write">
-        </script>`;
-});
-
 
 
 
@@ -133,6 +115,7 @@ const addCartToHTML = () => {
     }
     iconCartSpan.innerText = totalQuantity;
 };
+
 
 listCartHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
